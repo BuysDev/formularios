@@ -13,48 +13,69 @@ body {
     align-items: center;
 }
 
+input,
+h1,
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    width: 25%;
+    margin-top: 40px;
 }
 
 h1 {
     margin-bottom: 20px;
+    color: #3600ac;
 }
 
-input {
-    width: 150%;
+input, select {
     padding: 6.8px;
     outline: none;
-}
-
-input[type=password] {
-    margin-top: 20px;
+    margin-top: 16px;
+    border-radius: 12px;
+    border: 1px solid #3600ac;
 }
 
 form button {
-    width: 150%;
     padding: 8px;
-    margin-top: 25px;
+    margin-top: 20px;
+    background: none;
+    border: 1px solid #3600ac;
+    color: #3600ac;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #3600ac;
+    color: white;
+    transition: .4s ease-in-out;
 }
 
 label {
     display: flex;
     justify-content: flex-start;
+    margin-top: 10px;
 }
 
 form p {
     margin-top: 20px;
 }
 
-input[type=number]::-webkit-inner-spin-button { 
+input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
-    
+
 }
-input[type=number] { 
-   -moz-appearance: textfield;
-   appearance: textfield;
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
 
 }

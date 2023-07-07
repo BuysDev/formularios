@@ -12,15 +12,17 @@
     <form>
         <h1>Cadastro</h1>
         <label>Nome Completo</label>
-        <input type="text">
+        <input type="text" required>
         <label>Data de Nascimento</label>
-        <input type="date">
+        <input type="date" required>
         <label>E-mail</label>
-        <input type="email" placeholder="Digite seu e-mail">
+        <input type="email" required>
         <label>Número de telefone</label>
-        <input type="number" placeholder="Digite seu número de telefone">
-        <label>De qual estado você é?</label>
-        <select>
+        <input type="number" required>
+        <label>Endereço</label>
+        <input type="text" required>
+        <label>Estado</label>
+        <select required>
             <option value="rs">Rio Grande do Sul</option>
             <option value="sc">Santa Catarina</option>
             <option value="pr">Paraná</option>
@@ -49,6 +51,8 @@
             <option value="se">Sergipe</option>
             <option value="ba">Bahia</option>
         </select>
+        <label>Cidade</label>
+        <input type="text" required>
         <button type="submit">Cadastrar</button>
     </form>
 </body>

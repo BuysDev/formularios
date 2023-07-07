@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
 
 body {
@@ -11,35 +12,64 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #181818;
 }
 
 form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    width: 30%;
+    margin-right: 5%;
+    padding: 32px;
+    background-color: #212121;
 }
 
 h1 {
-    margin-bottom: 20px;
+    font-size: 2.1rem;
+    width: 100%;
+    margin-bottom: 40px;
+    text-decoration: underline;
 }
 
 input {
-    width: 150%;
+    width: 100%;
     padding: 6.8px;
     outline: none;
+    border: none;
+    background: none;
+    border-bottom: 1px solid white;
 }
 
-input[type=password] {
+#passwordlabel {
     margin-top: 20px;
 }
 
 form button {
-    width: 150%;
-    padding: 8px;
-    margin-top: 25px;
+    width: 100%;
+    padding: 9px;
+    margin-top: 20px;
+    font-family: sans-serif;
+    background: none;
+    background-color: #3d00c1;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
 }
 
-form p {
+button:hover {
+    background-color: #2b0087;
+    transform: scale(1.12);
+    transition: .4s ease-in-out;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+form a {
     margin-top: 20px;
+    text-align: center;
 }
